@@ -1,0 +1,659 @@
+
+/*fondo general del index*/
+.fondo {
+  background-color: #FFF7EF;
+}
+
+/*Estilos de fuentes*/
+@font-face {
+  font-family: "mistrully";
+  src: url("../font/Mistrully.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ovo";
+  src: url("../font/Ovo-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../font/roboto.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*Estilos del header*/
+
+/*Estilos del menú normal para pc y ipad*/
+#cabeceraRedes{
+  background-color:#FFF7EF ;
+  padding-top:10px;
+  color:#F3AFC9;
+  font-family: "roboto";
+  font-size: 30px;
+
+}
+#cabeceraRedes1{
+  background-color:#FFF7EF ;
+  padding-top:10px;
+  color:#F3AFC9;
+  font-size: 2vw;
+  font-family: "roboto";
+  
+
+}
+.contenidoNavegacion {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  background-color: #F3AFC9;
+  text-decoration: none;
+  margin: auto;
+  padding: 10px;
+  font-size: 24px;
+  font-family: "roboto";
+
+}
+
+.contenidoLogo {
+  text-align: center;
+  margin: auto;
+  background-color: #FFF7EF;
+}
+/*quitamos el estilo de las listas*/
+/*Estilos del menú hamburguesa para móvil*/
+.contenidoNavResponsive li{
+  list-style:none;
+}
+.contenidoNavResponsive a{
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  max-width: 200px;
+  background-color: #F3AFC9;
+  font-variant: small-caps;
+}
+.contenidoNavResponsive input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+}
+.contenidoNavResponsive{
+  display:none;
+}
+
+/*media querys de móvil para menús de navegación*/
+@media only screen and (max-width: 650px) {
+  .contenidoNavegacion{
+    display:none;
+  }
+  .contenidoNavResponsive{
+    display:block;
+  }
+  
+.contenidoNavResponsive input[type="checkbox"] {
+  opacity: 0;
+}
+
+.contenidoNavResponsive {
+  color: white;
+  position: relative;
+  background-color: #F3AFC9;
+  min-height: 48px;
+  font-family: "roboto";
+}
+
+.contenidoNavResponsive nav {
+  display: none;
+}
+
+.contenidoNavResponsive input:checked ~ nav {
+  display: block;
+}
+
+.contenidoNavResponsive input:checked ~ .fa-bars {
+  display: none;
+}
+
+.contenidoNavResponsive input:not(:checked) ~ .fa-times {
+  display: none;
+}
+/*logo del botón del menú hamburguesa*/
+#hamburguesa{
+  float: right;
+}
+.contenidoNavResponsive .fa-bars, .respmenu .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+}
+
+  
+}
+/*Estilos de home*/
+.Ofertas{
+  background-color: #F3AFC9;
+  font-family: "roboto";
+  font-size: 3vw;
+  margin:auto;
+  text-align: center ;
+}
+.verTratamientos {
+  text-align: center;
+  background-color: #C5FCE6;
+  text-align: center;
+
+}
+
+.contenidoNovedades {
+  margin: auto;
+  background-color: #FFF7EF;
+  text-align: center;
+}
+
+
+#botonTratamientos {
+  color:#FFF7EF;
+  background-color: #F3AFC9;
+  text-decoration: none;
+  color:#FFF7EF;
+  font-size: 2vw;
+  
+}
+
+/*Animaciones slidein en descubre tratamientos Home*/
+.letraTitulo {
+  font-family: "mistrully";
+  font-size: 4.5vw;
+  color: #323C3D;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.letraDescubreTratamientos {
+  font-family: 'ovo';
+  font-size: 2.5vw;
+  padding: 5px;
+  color: #323C3D;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.letraProductos {
+  font-family: "mistrully";
+  font-size:3.5vw;
+  color: #323C3D;
+}
+
+#contenedorProductos {
+  background-color: #FFF7EF;
+  padding-bottom: 100px;
+}
+
+.letraPrimavera {
+  font-family: "mistrully";
+  font-size:3.5vw;
+  color: #323C3D;
+}
+
+#fotoDecoracion{
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:50px;
+}
+
+
+/*Estilos del Footer*/
+
+#parte1{
+  background-color: #C5FCE6;
+  opacity:70%;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size:4vw;
+  padding: 100px;
+  text-align: center;
+  padding-left: 100px;
+}
+#parte2{
+  background-color: #F3AFC9;
+}
+#contenedorFooter2{
+  background-color: #F3AFC9;
+  margin: auto;
+  padding: 20px;
+  font-family: 'ovo';
+  font-size:4vw;
+}
+#ubicacion{
+  color:#F3AFC9;
+}
+#horario{
+  color:#F3AFC9;
+}
+#citas{
+  color:#F3AFC9;
+}
+#copy{
+  color:#C5FCE6;
+  
+}
+/*Estilos SobreNosotros*/
+
+#contenidoNosotros{
+  background-color: #FFF7EF;
+}
+.tituloNosotros{
+  font-family: "mistrully";
+  font-size:6vw;
+  color: #323C3D;
+}
+
+.tituloNosotros2{
+  font-family: 'ovo';
+  font-size:4vw;
+  color: #323C3D;
+
+}
+
+.portadaNosotros{
+  text-align: center;
+  margin:auto;
+  background-color:"#ecdce2";
+}
+.fondoNosotros{
+  background-color: #FFF7EF;
+}
+#contenidoNosotros2{
+  margin:auto;
+  background-color: #ecdce2;
+}
+.tituloNosotros3{
+  font-family: 'ovo';
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size:3vw;
+  color: #323C3D;
+}
+
+.tituloNosotros4{
+  font-family: 'ovo';
+  font-size: 4vw;
+  color: #323C3D;
+}
+
+#decoracion4{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top:20px;
+}
+#decoracion5{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top:20px;
+}
+#decoracion6{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top:20px;
+}
+#decoracion7{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top:20px;
+}
+
+/*Estilos de tratamientos*/
+.tratamientosFondo{
+  background-color: #FFF7EF;
+}
+#tratamientos{
+  background-color: #FFD9D6;
+}
+#facial{
+  background-color: #F1BEB9;
+  text-align: center;
+}
+#fotohigiene{
+  text-align: center;
+}
+#higieneFacialLetrero{
+  font-family: 'ovo';
+  font-size: 6vw;
+  color: #323C3D;
+  background-color: #F1BEB9;
+  padding: 20px;
+}
+#higieneFacial{
+  padding-left: 70px;
+  padding-right: 70px;
+  font-family: 'ovo';
+  font-size: 6vw;
+  color: #323C3D;
+  background-color: #F1BEB9;
+  
+}
+.higieneFacial2{
+  font-family: 'ovo';
+  font-size: 2.5vw;
+  padding: 50px;
+}
+.hidral2{
+  font-family: 'ovo';
+}
+.peeling2{
+  font-family: 'ovo';
+}
+.maquillaje2{
+  font-family: 'ovo';
+}
+#hidral{
+  background-color: #C5FCE6;
+  text-align: center;
+}
+#higieneHidralLetrero{
+  font-family: "mistrully";
+  font-size: 6vw;
+  color: #323C3D;
+  background-color: #C5FCE6;
+  padding: 20px;
+}
+#higieneHydral{
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'ovo';
+  font-size: 6vw;
+  color: #323C3D;
+  background-color: #C5FCE6;
+  
+}
+#fotohidral{
+  margin:auto;
+}
+#fotohigiene{
+  margin:auto;
+}
+#containerPeeling{
+  font-family: 'ovo';
+  font-size: 6vw;
+  color: #323C3D;
+  background-color:  #ECDCE2;
+  padding: 20px;
+  text-align: center;
+}
+#higienePeelingLetrero{
+  font-family: "mistrully";
+  font-size: 6vw;
+  color: #323C3D;
+  background-color:  #ECDCE2;
+  padding: 20px;
+}
+#fotoPeeling{
+  margin:auto;
+}
+#higienePeeling{
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'ovo';
+  font-size: 4vw;
+  color: #323C3D;
+  background-color:  #ECDCE2;
+  padding-bottom: 20px;
+  
+}
+
+#containerMakeUp{
+  font-family: 'ovo';
+  font-size: 6vw;
+  color: #323C3D;
+  background-color:  #F3AFC9;
+  padding: 20px;
+  text-align: center;
+}
+#fotoMakeup{
+  margin:auto;
+}
+#maquillajeContenido{
+  padding-left: 70px;
+  padding-right: 70px;
+  font-family: 'ovo';
+  font-size: 3vw;
+  color: #323C3D;
+  background-color:  #F3AFC9;
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
+/*Estilos de blog*/
+.blogFondo{
+  background-color: #FFF7EF;
+}
+#blogCabecera{
+  font-family: 'ovo';
+  font-size: 2.5vw;
+  color: #323C3D;
+  background-color:  #FFF7EF;
+  margin: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+#bronceado{
+  padding:50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'ovo';
+  font-size: 22px;
+  color: #323C3D;
+}
+#contenidoBronceado{
+  padding:50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'ovo';
+  font-size: 22px;
+  color: #323C3D;
+}
+
+/*Estilos de Contacto */
+.ContactoFondo{
+  background-color:#FFF7EF;
+}
+#contenidoFormulario{
+  background-color: #FFECE8;
+  margin:auto;
+  padding:70px;
+}
+#estiloCajas{
+  background-color: #FFECE8;
+}
+#contenedorNewsletter{
+  background-color:#FFF7EF;
+  margin: auto;
+  padding: 50px;
+}
+/*Estilos de Menú cita*/
+.menuCitaFondo{
+  background-color: #FFF7EF;
+}
+.menuOpciones{
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+/*Estilos de modificaCita*/
+.modificaCitaFondo{
+  background-color: #FFF7EF;
+}
+/*Estilos de eliminaCita*/
+.eliminaCitaFondo{
+  background-color: #FFF7EF;
+}
+/*Estilos de pideCita*/
+#pideCitaFondo{
+  background-color: #FFF7EF;
+  text-align: center;
+  padding: 150px;
+  margin: auto;
+  font-family: 'ovo';
+  font-size: 2.5vw;
+  color: #323C3D;
+  padding-bottom: 20px;
+}
+/*Estilos de veCita*/
+.veCitaFondo{
+  background-color: #FFF7EF;
+}
+#rotuloVeCita{
+  font-family: 'ovo';
+  font-size: 2.5vw;
+  color: #323C3D;
+  margin: auto;
+  padding-bottom: 20px;
+}
+#contenidoBusqueda{
+  background-color: #FFF7EF;
+  margin: auto;
+  text-align: center;
+  font-family: 'ovo';
+  font-size: 4vw;
+  color: #323C3D;
+  margin: auto;
+  padding-bottom: 20px;
+}
+#contenidoCitas{
+  background-color: #FFF7EF;
+  padding:50px;
+  text-align: center;
+  font-family: 'ovo';
+  font-size: 3vw;
+  color: #323C3D;
+}
+#contenidoNombre{
+  padding:20px;
+  text-align: center;
+  font-family: 'ovo';
+  font-size: 3vw;
+  color: #323C3D;
+}
+
+

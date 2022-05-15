@@ -108,7 +108,7 @@ class ModificaCita extends Component{
     //Petición http por post para modificar la reserva
     ModificarCita=()=>{
         
-        axios.put('http://localhost:3900/api/update/'+id,{
+        axios.put('https://beautyaplication.herokuapp.com/api/update/'+id,{
             nombre:nombre2,
             apellidos:apellidos2,
             tratamiento:servicio,

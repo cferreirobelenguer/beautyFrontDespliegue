@@ -38,7 +38,7 @@ class EliminaCita extends Component{
     
     //Petición http por post para guardar el artículo
     EliminarCita=()=>{
-        axios.delete('http://localhost:3900/api/delete/'+id)
+        axios.delete('https://beautyaplication.herokuapp.com/api/delete/'+id)
         .then(res=>{
             
             //Se recogen los datos de la petición en resultadosPideCita y status

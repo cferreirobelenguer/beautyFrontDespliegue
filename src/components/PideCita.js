@@ -103,7 +103,7 @@ class PideCita extends Component{
     //Petición http por post para guardar la reserva
     reservarCita=()=>{
         
-        axios.post('http://localhost:3900/api/save/',{
+        axios.post('https://beautyaplication.herokuapp.com/api/save/',{
             nombre:nombre2,
             apellidos:apellidos2,
             tratamiento:servicio,

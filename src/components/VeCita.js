@@ -36,7 +36,7 @@ class VeCita extends Component{
     //En getClientes se realiza la petición ajax para mostrar las reservas del cliente
     getClientes=()=>{
         
-        axios.get('http://localhost:3900/api/ver/'+nombre+'&'+apellidos)
+        axios.get('https://beautyaplication.herokuapp.com/api/ver/'+nombre+'&'+apellidos)
         //Se realiza la promesa
         .then(res=>{
             //Se introducen los datos de la petición dentro del objeto resultado
